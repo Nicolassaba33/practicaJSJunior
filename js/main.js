@@ -904,26 +904,163 @@
 /*=====  Metodos  ======*/
 
 // * sqrt() - Devuelve la raiz cuadrada positiva de un numero
+// let numero = Math.sqrt(25);
+// console.log(numero);
 
 // * cbrt() - Devuelve la raiz cubica de un numero
+// let numero = Math.cbrt(27)
+// console.log(numero);
 
 // * max() - Devuelve el mayor de cero o mas numeros
+// let numero = Math.max(1, 2, 3, 4, 5, 6, 7, 8);
+// console.log(numero);
 
 // * min() - devuelve el mas pequeño de cero o mas numeros
+// let numero = Math.min(1, 2, 3, 4, 5, 6, 7, 8);
+// console.log(numero);
 
 // * random() - devuelve un numero pseudo-aleatorio entre 0 y 1
+// for (var i = 0; i < 100; i++) {
+//   let numero = Math.random() * 99;
+//   numero = Math.floor(numero + 1);
+//   console.log(numero + "<br>");
+// }
 
 // * round() - devuelve el valor de un numero redondeado al numero entero mas cercano
+// let numero = Math.round(9.9);
+// console.log(numero);
 
 // * fround() - devuelve la representacion flotante de precision simple mas cercana de un numero
+// let numero = Math.fround(9.9);
+// console.log(numero);
 
 // * floor() - devuelve el mayor entero menor que o igual a un numero
+// let numero = Math.floor(1, 4, 301, 211, 1);
+// console.log(numero);
 
 // * trunc() - devuelve la parte entera del numero x, la eliminacion de los digitos fraccionarios
+// let numero = Math.trunc(11.210021);
+// console.log(numero);
 
 /*=====  Propiedades  ======*/
 // * PI - Ratio de la circunferencia de un circulo respecto a su diametro, aproximadamente 3.14159
+// let numeroPI = Math.PI();
+// console.log(numeroPI);
 
 // * SQRT1_2  - Raiz cuadrada de 1/2; Equivalente, 1 sobre la raiz cuadrada de 2, aproximadamente 0.707
+// let SQRT1 = Math.SQRT1_2(25);
+// console.log(SQRT1);
 
 // * SQRT2 - Raiz cuadrada de 2, aproximadamente 1.414
+// let SQRT2 = Math.SQRT2();
+// console.log(SQRT2);
+
+// *E - Constante de Euler, la base de los logaritmos naturales, aproximada
+// let numero = Math.E;
+// console.log(numero);
+
+// *LN2 - Logaritmo natural de 2, Aproximadamente 0.693
+// let ln2 = Math.LN2;
+// console.log(ln2);
+
+// *LN10 - Logaritmo natural de 10, aproximadamente 2.303
+// let ln10 = Math.ln10;
+// console.log(ln10);
+
+// *LOG2E - Logaritmo de E con base 2, aproximadamente 1.443
+// let log2e = Math.LOG2E;
+// console.log(log2e);
+
+// *LOG10E - Logaritmo de E con base 10, aproximadamente
+// let log10e = Math.LOG10E;
+// console.log(log10e);
+
+/*=============================================
+=            Historia de Cofla Part 4         =
+=============================================*/
+
+/* Exercise 1 */
+// *Implementar nuevas funciones
+class Calculadora {
+  constructor() {}
+
+  sumar(num1, num2) {
+    return parseInt(num1) + parseInt(num2);
+  }
+
+  restar(num1, num2) {
+    return parseInt(num1) - parseInt(num2);
+  }
+
+  multiplicar(num1, num2) {
+    return parseInt(num1) * parseInt(num2);
+  }
+
+  dividir(num1, num2) {
+    return parseInt(num1) / parseInt(num2);
+  }
+
+  potenciar(num1, exp) {
+    return num1 ** exp;
+  }
+
+  raizCuadrada(num) {
+    return Math.sqrt(num);
+  }
+
+  raizCubica(num) {
+    return Math.cbrt(num);
+  }
+}
+
+const CALCULADORA = new Calculadora();
+
+alert("¿Que operacion deseas ejecutar?");
+let operacion = prompt(
+  "1:Suma, 2:Resta, 3:Multiplicacion, 4:Division, 5:Potenciacion, 6:Raiz Cuadrada, 7:Raiz Cubica"
+);
+
+if (operacion == 1) {
+  let num1 = prompt("Primer numero a sumar");
+  let num2 = prompt("Segundo numero a sumar");
+  let resultado = CALCULADORA.sumar(num1, num2);
+  alert(`La suma da como resultado: ${resultado}`);
+} else if (operacion == 2) {
+  let num1 = prompt("Primer numero a sumar");
+  let num2 = prompt("Segundo numero a sumar");
+  let resultado = CALCULADORA.restar(num1, num2);
+  alert(`La resta da como resultado: ${resultado}`);
+} else if (operacion == 3) {
+  let num1 = prompt("Primer numero a sumar");
+  let num2 = prompt("Segundo numero a sumar");
+  let resultado = CALCULADORA.multiplicar(num1, num2);
+  alert(`La multiplicacion da como resultado: ${resultado}`);
+} else if (operacion == 4) {
+  let num1 = prompt("Primer numero a sumar");
+  let num2 = prompt("Segundo numero a sumar");
+  let resultado = CALCULADORAdividir(num1, num2);
+  alert(`La division da como resultado: ${resultado}`);
+} else if (operacion == 5) {
+  let num1 = prompt("Numero a potenciar");
+  let exp = prompt("Exponente");
+  let resultado = CALCULADORA.potenciar(num1, exp);
+  alert(`La potenciacion da como resultado: ${resultado}`);
+} else if (operacion == 6) {
+  alert(`La raiz cuadrada da como resultado: ${resultado}`);
+} else if (operacion == 7) {
+  let num = prompt("Ingrese numero");
+  let resultado = Math.cbrt(num);
+  alert(`La raiz cubica da como resultado: ${resultado}`);
+} else {
+  ("No hay otra operacion disponible");
+}
+
+/* Exercise 2 */
+// *Crear la funcion nos devuelva: Profesor asignado, Nombre de los alumnos
+// *Funcion que nos indique en cuantas clases esta Cofla
+// *Nombre de esas clases y sus profesores
+
+/* Exercise 3 */
+// *Preguntarle en que materia se quiere inscribir
+// *Si ya hay 20 inscriptos, negarle la inscripcion
+// *Si hay menos de 20, Inscribirlo y añadirlo a la lista de alumnos
