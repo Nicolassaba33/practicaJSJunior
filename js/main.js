@@ -981,82 +981,125 @@
 
 /* Exercise 1 */
 // *Implementar nuevas funciones
-class Calculadora {
-  constructor() {}
+// class Calculadora {
+//   constructor() {}
 
-  sumar(num1, num2) {
-    return parseInt(num1) + parseInt(num2);
-  }
+//   sumar(num1, num2) {
+//     return parseInt(num1) + parseInt(num2);
+//   }
 
-  restar(num1, num2) {
-    return parseInt(num1) - parseInt(num2);
-  }
+//   restar(num1, num2) {
+//     return parseInt(num1) - parseInt(num2);
+//   }
 
-  multiplicar(num1, num2) {
-    return parseInt(num1) * parseInt(num2);
-  }
+//   multiplicar(num1, num2) {
+//     return parseInt(num1) * parseInt(num2);
+//   }
 
-  dividir(num1, num2) {
-    return parseInt(num1) / parseInt(num2);
-  }
+//   dividir(num1, num2) {
+//     return parseInt(num1) / parseInt(num2);
+//   }
 
-  potenciar(num1, exp) {
-    return num1 ** exp;
-  }
+//   potenciar(num1, exp) {
+//     return num1 ** exp;
+//   }
 
-  raizCuadrada(num) {
-    return Math.sqrt(num);
-  }
+//   raizCuadrada(num) {
+//     return Math.sqrt(num);
+//   }
 
-  raizCubica(num) {
-    return Math.cbrt(num);
-  }
-}
+//   raizCubica(num) {
+//     return Math.cbrt(num);
+//   }
+// }
 
-const CALCULADORA = new Calculadora();
+// const CALCULADORA = new Calculadora();
 
-alert("¿Que operacion deseas ejecutar?");
-let operacion = prompt(
-  "1:Suma, 2:Resta, 3:Multiplicacion, 4:Division, 5:Potenciacion, 6:Raiz Cuadrada, 7:Raiz Cubica"
-);
+// alert("¿Que operacion deseas ejecutar?");
+// let operacion = prompt(
+//   "1:Suma, 2:Resta, 3:Multiplicacion, 4:Division, 5:Potenciacion, 6:Raiz Cuadrada, 7:Raiz Cubica"
+// );
 
-if (operacion == 1) {
-  let num1 = prompt("Primer numero a sumar");
-  let num2 = prompt("Segundo numero a sumar");
-  let resultado = CALCULADORA.sumar(num1, num2);
-  alert(`La suma da como resultado: ${resultado}`);
-} else if (operacion == 2) {
-  let num1 = prompt("Primer numero a sumar");
-  let num2 = prompt("Segundo numero a sumar");
-  let resultado = CALCULADORA.restar(num1, num2);
-  alert(`La resta da como resultado: ${resultado}`);
-} else if (operacion == 3) {
-  let num1 = prompt("Primer numero a sumar");
-  let num2 = prompt("Segundo numero a sumar");
-  let resultado = CALCULADORA.multiplicar(num1, num2);
-  alert(`La multiplicacion da como resultado: ${resultado}`);
-} else if (operacion == 4) {
-  let num1 = prompt("Primer numero a sumar");
-  let num2 = prompt("Segundo numero a sumar");
-  let resultado = CALCULADORAdividir(num1, num2);
-  alert(`La division da como resultado: ${resultado}`);
-} else if (operacion == 5) {
-  let num1 = prompt("Numero a potenciar");
-  let exp = prompt("Exponente");
-  let resultado = CALCULADORA.potenciar(num1, exp);
-  alert(`La potenciacion da como resultado: ${resultado}`);
-} else if (operacion == 6) {
-  alert(`La raiz cuadrada da como resultado: ${resultado}`);
-} else if (operacion == 7) {
-  let num = prompt("Ingrese numero");
-  let resultado = Math.cbrt(num);
-  alert(`La raiz cubica da como resultado: ${resultado}`);
-} else {
-  ("No hay otra operacion disponible");
-}
+// if (operacion == 1) {
+//   let num1 = prompt("Primer numero a sumar");
+//   let num2 = prompt("Segundo numero a sumar");
+//   let resultado = CALCULADORA.sumar(num1, num2);
+//   alert(`La suma da como resultado: ${resultado}`);
+// } else if (operacion == 2) {
+//   let num1 = prompt("Primer numero a sumar");
+//   let num2 = prompt("Segundo numero a sumar");
+//   let resultado = CALCULADORA.restar(num1, num2);
+//   alert(`La resta da como resultado: ${resultado}`);
+// } else if (operacion == 3) {
+//   let num1 = prompt("Primer numero a sumar");
+//   let num2 = prompt("Segundo numero a sumar");
+//   let resultado = CALCULADORA.multiplicar(num1, num2);
+//   alert(`La multiplicacion da como resultado: ${resultado}`);
+// } else if (operacion == 4) {
+//   let num1 = prompt("Primer numero a sumar");
+//   let num2 = prompt("Segundo numero a sumar");
+//   let resultado = CALCULADORAdividir(num1, num2);
+//   alert(`La division da como resultado: ${resultado}`);
+// } else if (operacion == 5) {
+//   let num1 = prompt("Numero a potenciar");
+//   let exp = prompt("Exponente");
+//   let resultado = CALCULADORA.potenciar(num1, exp);
+//   alert(`La potenciacion da como resultado: ${resultado}`);
+// } else if (operacion == 6) {
+//   alert(`La raiz cuadrada da como resultado: ${resultado}`);
+// } else if (operacion == 7) {
+//   let num = prompt("Ingrese numero");
+//   let resultado = Math.cbrt(num);
+//   alert(`La raiz cubica da como resultado: ${resultado}`);
+// } else {
+//   ("No hay otra operacion disponible");
+// }
 
 /* Exercise 2 */
 // *Crear la funcion nos devuelva: Profesor asignado, Nombre de los alumnos
+// const obtenerInformacion = (materia) => {
+//   materias = {
+//     fisica: ["Perez", "pedro", "pepito", "cofla", "maria"],
+//     programacion: ["Rodriguez", "pedro", "pepito", "cofla"],
+//     logica: ["Hernandez", "pedro", "pepito", "cofla", "maria"],
+//     quimica: ["Rodriguez", "pedro", "pepito", "cofla", "maria"],
+//   };
+//   if (materias[materia] !== "undefined") {
+//     return materias[materia], materias;
+//   } else {
+//     return false;
+//   }
+// };
+
+// const mostrarInformacion = (materia) => {
+//   let informacion = obtenerInformacion(materia);
+
+//   if (informacion !== false) {
+//     let profesor = obtenerInformacion("fisica")[0][0];
+//     let alumnos = obtenerInformacion("fisica")[0];
+//     alumnos.shift();
+//     console.log(
+//       `El profesor de <b>${informacion[1]}</b> es: <b style="color:red">${profesor}</b><br>
+//       Los alumnos son: <b style="color:blue">${alumnos}</b><br>
+//       `
+//     );
+//   }
+// };
+
+// const cantidadDeClases = (alumno) => {
+//   let cantidadTotal = 0;
+//   for (info in informacion[2]) {
+//     if (informacion[2][info].includes(alumno)) {
+//       cantidadTotal++;
+//     }
+//   }
+//   return cantidadTotal;
+// };
+// mostrarInformacion("fisica");
+// mostrarInformacion("programacion");
+// mostrarInformacion("logica");
+// mostrarInformacion("quimica");
+
 // *Funcion que nos indique en cuantas clases esta Cofla
 // *Nombre de esas clases y sus profesores
 
@@ -1064,3 +1107,70 @@ if (operacion == 1) {
 // *Preguntarle en que materia se quiere inscribir
 // *Si ya hay 20 inscriptos, negarle la inscripcion
 // *Si hay menos de 20, Inscribirlo y añadirlo a la lista de alumnos
+
+/*----------  Capitulo 5  ----------*/
+
+/*=============================================
+=                 Console                    =
+=============================================*/
+
+/* Funciones de registro*/
+
+// !No se recomienda utilizar assert
+// *assert() - Aparece un mensaje de error en la consola si la afirmacion es falsa. Si la afirmacion es verdadera, no aparecera nada. (NO ESTANDAR)
+console.assert(5 < 3);
+// *clear() - Limpia la consola
+// console.clear();
+
+// *error() - Muestra un mensaje de error en la consola Web
+// console.error("Cuidado");
+
+// *info() - Emite un mensaje informativo a la Consola Web. En Firefox y Chrome, se muestra un pequeño icono "i" junto a estos elementos en el registro de la Consola Web
+// console.info("Guarda");
+
+// *log() - Muestra un mensaje en la consola Web (o del interprete JS)
+// console.log("Muestra un mensaje por consola");
+
+// *table() - Esta funcion toma un argumento obligatorio: data, que debe ser un array o un objeto, y un parametro adicional: columns y nos muestra una tabla en consola
+// console.table([5, 2, 4, , 6, 6, 3]);
+
+// *warn() - Imprime un mensaje de advertencia en la Consola Web
+// console.warn("Che capo venis bien, pero cuidado por que..");
+
+// *dir() - Despliega una lista interactiva de las propiedades del objeto JavaScript especificado. [NO ESTANDAR]
+// console.dir([5, 2, 4, , 5, 6]);
+
+/* Funciones de conteo*/
+// *count() - Registra el numero de veces que se llama a count(). Esta funcion toma como argumento opcional una etiqueta
+// function sumar(num1, num2) {
+//   document.write(num1, num2);
+//   console.count();
+// }
+
+// sumar(2, 4);
+// sumar(2, 4);
+// sumar(2, 4);
+// sumar(2, 4);
+// sumar(2, 4);
+// sumar(2, 4);
+// sumar(2, 4);
+// sumar(2, 4);
+// sumar(2, 4);
+
+// *countReset() - Resetea el contador console.count()
+// console.countReset();
+
+/* Funciones de agrupacion*/
+// *group() - Crea un nuevo grupo en linea en el registro de la consola web
+console.log("pedro");
+
+// *groupEnd() - Remueve un grupo en linea en el registro de la consola web
+
+// *groupCollapsed() - Crea un grupo en linea pero contraido, el usuario debe expandirlo para verlo
+
+/* Funciones de temporizacion */
+// *time() - Inicia un temporizador
+
+// *timeEnd() - Registra el valor actual de un temporizado
+
+// *timeLog() - Detiene un temporizador
